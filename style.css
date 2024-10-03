@@ -1,0 +1,179 @@
+/* General reset and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #00c6ff, #0072ff); /* Gradient background */
+    color: #2c3e50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Authentication Form Container */
+.auth-container {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.auth-container h2 {
+    font-size: 2rem;
+    color: #0072ff;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 1px solid #bdc3c7;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: #0072ff;
+    outline: none;
+}
+
+button[type="submit"] {
+    background-color: #0072ff;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px);
+}
+
+p {
+    margin-top: 20px;
+}
+
+p a {
+    color: #0072ff;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+p a:hover {
+    color: #005bb5;
+}
+
+/* Main Typing Test Section */
+.mainDiv {
+    display: none; /* Hidden initially */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:  linear-gradient(to right, #00c6ff, #0072ff);
+}
+
+.centerDiv {
+    margin-top: 4rem;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    color: #0072ff;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    user-select: none;
+    color: #7f8c8d;
+}
+
+/* Typing Textarea Styling */
+textarea {
+    width: 100%;
+    height: 200px;
+    background: #b9d4db;
+    border: 2px solid #0c8ce2;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    resize: none;
+    transition: border 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #0072ff;
+}
+
+/* Button for Start/Done */
+.mainBtn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mainBtn:hover {
+    background-color: #005bb5;
+    transform: translateY(-3px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .auth-container, .centerDiv {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .mainBtn {
+        font-size: 1rem;
+        padding: 10px 25px;
+    }
+}

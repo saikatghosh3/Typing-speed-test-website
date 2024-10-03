@@ -1,0 +1,76 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css"> </head>
+
+<body>
+	<div class="mainDiv">
+		<div class="centerDiv">
+			<h1>Welcome To Typing Speed Test Website
+            </h1>
+			<h2 id="msg"></h2>
+			<textarea name="" id="mywords" cols="100" rows="10" placeholder="Click on the Start Button and Type Above Appearing Text as it is..."></textarea>
+			<button id="btn" class="mainBtn">Start</button>
+		</div>
+	</div>
+	<script src="script.js"></script>
+</body>
+
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Test with Login/Sign-Up</title>
+	
+    <link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+
+    <!-- Authentication Container -->
+    <div class="auth-container" id="auth-section">
+        <!-- Sign Up Form -->
+        <div class="form-container" id="signup-section">
+            <h2>Sign Up</h2>
+            <form id="signupForm">
+                <input type="text" id="signupUsername" placeholder="Username" required><br>
+                <input type="password" id="signupPassword" placeholder="Password" required><br>
+                <button type="submit">Sign Up</button>
+            </form>
+            <p>Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+        </div>
+
+        <!-- Login Form -->
+        <div class="form-container" id="login-section" style="display:none;">
+            <h2>Login</h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required><br>
+                <input type="password" id="loginPassword" placeholder="Password" required><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>New here? <a href="#" onclick="showSignUp()">Sign Up</a></p>
+        </div>
+    </div>
+
+    <!-- Typing Test Section (Initially Hidden) -->
+    <div class="mainDiv" id="typingTest-section" style="display:none;">
+        <div class="centerDiv">
+            <h1>Welcome To Typing Speed Test Website</h1>
+            <h2 id="msg"></h2>
+            <textarea id="mywords" cols="100" rows="10" placeholder="Click on the Start Button and Type Above Appearing Text as it is..." disabled></textarea>
+            <button id="btn" class="mainBtn">Start</button>
+        </div>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
